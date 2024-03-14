@@ -1,0 +1,81 @@
+# Deborah Vincent
+# COP 2500
+# Program 3
+# 9/16/2023
+# The turtle variables for the program
+import turtle
+screen=turtle.getscreen()
+
+mt=turtle.Turtle()
+# Adds the screen colour
+screen.bgcolor("#FFE4C4")
+# Drawing the clipboard as a rectangle
+mt.pensize(30)
+mt.penup()
+mt.goto(-250,200)
+mt.pendown()
+mt.forward(300)
+mt.right(90)
+mt.forward(400)
+mt.right(90)
+mt.forward(300)
+mt.right(90)
+mt.forward(400)
+# Drawing the Clipboard clip then filling it in
+mt.color("black")
+mt.begin_fill()
+mt.penup()
+mt.goto(-150,220)
+mt.setheading(0)
+mt.pendown()
+mt.forward(100)
+mt.right(90)
+mt.forward(70)
+mt.right(90)
+mt.forward(100)
+mt.right(90)
+mt.forward(70)
+mt.end_fill()
+# Drawing the Clipboard lines
+mt.penup()
+mt.goto(-190,100)
+mt.setheading(0)
+mt.pendown()
+mt.forward(180)
+mt.penup()
+mt.goto(-190,50)
+mt.setheading(0)
+mt.pendown()
+mt.forward(180)
+mt.penup()
+mt.goto(-190,0)
+mt.setheading(0)
+mt.pendown()
+mt.forward(180)
+# Drawing the Check mark changing size and colour
+mt.pensize(40)
+mt.pencolor("green")
+mt.penup()
+mt.goto(-180,-100)
+mt.setheading(300)
+mt.pendown()
+mt.forward(50)
+mt.left(90)
+mt.forward(150)
+# Drawing the Orange and filling it in
+mt.pensize(5)
+mt.color("#ED9121")
+mt.begin_fill()
+mt.penup()
+mt.goto(80,-10)
+mt.setheading(180)
+mt.pendown()
+mt.circle(100)
+mt.end_fill()
+# Drawing the Stem of the Orange and changing the size and color
+mt.pencolor("#006400")
+mt.pensize(15)
+mt.setheading(80)
+mt.forward(50)
+# Hides the turtle
+mt.hideturtle()
